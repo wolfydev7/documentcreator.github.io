@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapor Oluşturucu - By wolfy.dev</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="">Şikayet Dilekçesi</a>
+    </nav>
+    <div class="content">
+        <div class="box">
+            <div class="inputs">
+                <div class="title">
+                    <p>Şikayet Raporu</p>
+                </div>
+                <div class="input3">
+                    <label for="depname">Departman Adı</label>
+                    <select name="depname" id="depname">
+                        <option>Mission Row Police Department</option>
+                        <option>San Andreas State Department</option>
+                        <option>Blaine County Sheriff Office</option>
+                        <option>Mission Row Police Department</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="namesurname">İsim Soyisim</label>
+                    <input type="text" id="namesurname" placeholder="Örn; Wolfy Pancho">
+                </div>
+                <div class="input">
+                    <label for="date">Olay Tarihi</label>
+                    <input type="text" id="date" placeholder="Format (gg.aa.yyyy)">
+                </div>
+                <div class="input">
+                    <label for="time">Olay Saati</label>
+                    <input type="text" id="time" placeholder="Format (ss.dd)">
+                </div>
+                <div class="input">
+                    <label for="persons">Olaya Dahil Olan Kişiler</label>
+                    <input type="text" id="persons" placeholder="Örn; Wolfy Pancho, Eric Luca, Cyrus Larsen">
+                </div>
+                <div class="input2">
+                    <label for="patrol">Devriye Birimi</label>
+                    <div>
+                        <select name="patrol" id="patrol">
+                            <option value="Tanımsız">Tanımsız</option>
+                            <option value="Lincoln">Lincoln</option>
+                            <option value="Adam">Adam</option>
+                            <option value="Omega">Omega</option>
+                            <option value="Queen">Queen</option>
+                            <option value="Edward">Edward</option>
+                            <option value="Tom">Tom</option>
+                            <option value="Marry">Marry</option>
+                            <option value="Hutson">Hutson</option>
+                            <option value="Frank">Frank</option>
+                        </select>
+                        <input type="number" placeholder="Örn; 1">
+                    </div>
+                </div>
+                <div class="input4">
+                    <label for="details">Şikayet</label>
+                    <textarea name="details" id="details" placeholder="Şikayetini detaylı ve noktalama kurallarına dikkat ederek yaz."></textarea>
+                </div>
+            </div>
+            <div class="output">
+                <div class="page">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
